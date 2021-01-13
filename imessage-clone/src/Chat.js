@@ -10,6 +10,13 @@ function Chat() {
         </h4>
         <strong>Details</strong>
       </div>
+
+      <div className="chat__input">
+        <form>
+          <input type="text" />
+          <button>Send Message</button>
+        </form>
+      </div>
     </div>
   );
 }
