@@ -4,7 +4,14 @@ import "./SidebarChat.css";
 
 function SidebarChat({ id, chatName }) {
   return (
-    <div className="sidebarChat">
+    <div onClick={() => {
+      dispatchEvent({
+        setChat({
+          chatId: id,
+          chatName: chatName
+        })
+      })
+    }} className="sidebarChat">
       <Avatar />
       <div className="sidebarChat__info">
         <h3>{chatName}</h3>

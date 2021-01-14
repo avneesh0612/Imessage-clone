@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import "./Chat.css";
 import MicNoneIcon from "@material-ui/icons/MicNone";
 import { IconButton } from "@material-ui/core";
+import Message from "./Message";
 
 function Chat() {
   const [input, setInput] = useState();
+  const [messages, setMessages] = useState([]);
   const sendMessage = (e) => {
     e.preventDefault();
 
@@ -20,15 +22,10 @@ function Chat() {
       </div>
 
       <div className="chat__messages">
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
-        <h2>I am a message</h2>
+        <Message />
+        <Message />
+        <Message />
+        <Message />
       </div>
 
       <div className="chat__input">
