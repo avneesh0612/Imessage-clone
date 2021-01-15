@@ -14,7 +14,7 @@ export const chatSlice = createSlice({
   },
 });
 
-export const { lsetChat } = chatSlice.actions;
+export const { setChat } = chatSlice.actions;
 
 export const selectChatName = (state) => state.chat.chatName;
 export const selectChatId = (state) => state.chat.chatId;
