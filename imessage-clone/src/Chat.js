@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import "./Chat.css";
-import MicNoneIcon from "@material-ui/icons/MicNone";
 import { IconButton } from "@material-ui/core";
-import Message from "./Message";
-import { selectChatId, selectChatName } from "./features/chatSlice";
+import MicNoneIcon from "@material-ui/icons/MicNone";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import "./Chat.css";
+import { selectChatId, selectChatName } from "./features/chatSlice";
 import db from "./firebase";
+import Message from "./Message";
 import firebase from "firebase";
 import { selectUser } from "./features/userSlice";
 import FlipMove from "react-flip-move";

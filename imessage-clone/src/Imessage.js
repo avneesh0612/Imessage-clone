@@ -1,7 +1,7 @@
 import React from "react";
+import Chat from "./Chat";
 import "./Imessage.css";
 import Sidebar from "./Sidebar";
-import Chat from "./Chat";
 
 function Imessage() {
   return (
