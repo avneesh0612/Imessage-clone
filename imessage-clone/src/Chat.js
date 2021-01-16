@@ -75,7 +75,9 @@ function Chat() {
             placeholder="iMessage"
             type="text"
           />
-          <button onClick={sendMessage}>Send Message</button>
+          <button onClick={sendMessage} disabled={!input} type="submit">
+            Send a message
+          </button>
         </form>
 
         <IconButton>
